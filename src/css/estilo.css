@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: rgb(251,175,202);
+    background: linear-gradient(90deg, rgba(251,175,202,1) 8%, rgba(134,252,69,1) 100%);
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 20px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto;
+    margin-top: 20px;
+    width: 90%;
+    
+    
+
+}
+
+input{
+    padding: 15px;
+    width: 60%;
+    font-size: 1rem;
+    height: 60px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: none;
+}
+
+button.add{
+    padding: 15px;
+    background-color: rgb(30, 219, 252);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 60px;
+    
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    width: 61%;
+    margin: auto auto;
+    padding-top: 20px;
+}
+
+.item{
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+.item-icone{
+    flex: 20%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.item-nome{
+    flex: 55%;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.item-botao{
+    
+    flex: 25%;
+}
+
+.delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 61, 3);
+    font-size: 20px;
+    padding: 10px;
+    gap: 10px;
+    border: none;
+    height: 60px;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+}
+
+.clicado .item-icone .material-icons-outlined{
+    color: rgb(59, 197, 24);
+    font-weight: bold;
+}
+
+.item.clicado{
+    background-color: rgb(195, 241, 195);
+}
+
+.item.clicado .item-nome{
+    text-decoration: line-through;
+}
